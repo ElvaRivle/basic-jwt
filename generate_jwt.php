@@ -11,7 +11,7 @@ $header = json_encode([
 $payload = json_encode([
 	'user_id' => 1,
 	'role' => 'admin',
-	'exp' => 1596137100
+	'exp' => 1596132000
 ]);
 
 $base64UrlHeader = base64UrlEncode($header);

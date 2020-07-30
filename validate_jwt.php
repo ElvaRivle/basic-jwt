@@ -18,6 +18,7 @@ $payload=base64_decode($tokenParts[1]);
 $signatureProvided = $tokenParts[2];
 
 $expiration = Carbon::createFromTimestamp(json_decode($payload)->exp);
+$expiration->setTimeZone('CEST');
 $tokenExpired = (Carbon::now()->diffInSeconds($expiration, false) < 0);
 
 
