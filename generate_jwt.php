@@ -13,6 +13,8 @@ $payload = json_encode([
 	'role' => 'admin',
 	'exp' => 1596132000
 ]);
+#exp is set to 30.7.2020 20:00h
+#change as you wish, link in README
 
 $base64UrlHeader = base64UrlEncode($header);
 $base64UrlPayload = base64UrlEncode($payload);
